@@ -1,7 +1,8 @@
-import Homepage from "./pages/homepage/homepage.component";
 import './App.css'
 import { Route, Switch } from 'react-router-dom';
+import Homepage from "./pages/homepage/homepage.component";
 import ShopPage from "./pages/shoppage/shoppage.component";
+import AuthPage from './pages/auth/auth.component'
 import  Header  from "./components/header/header.component";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Homepage}/>
         <Route exact path='/shop' component={ShopPage}/>
+        <Route exact path='/signin' component={AuthPage}/>
       </Switch>
     </div>
   );
